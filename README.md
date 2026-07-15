@@ -4,19 +4,15 @@ Generate a shareable contributor card from a PostgreSQL contributor's
 [Commitfest](https://commitfest.postgresql.org) history, patches submitted,
 committed, active, commitfests participated in, and focus areas.
 
-There are two ways to use it: a **single HTML page** (zero setup, runs in the browser).
+## Focus areas
 
-## Web page
-
-Open `index.html` in a browser, type a Commitfest handle or name, and
-it builds the card. You can then download a high-resolution PNG, copy a
-shareable link, or share to LinkedIn.
+Open [https://curiousone.in/pg-contrib-card/](https://curiousone.in/pg-contrib-card/) in a browser, type a Commitfest handle or name, and it builds the contrib card. You can then download a high-resolution PNG, copy a shareable link, or share to LinkedIn.
 
 You can also link straight to a result with a query parameter:
 
 ```
-index.html?q=<handle>          # auto-runs the search
-index.html?q=<handle>&quick=1  # quick scan (current commitfest only)
+https://curiousone.in/pg-contrib-card/?q=<handle>          # auto-runs the search
+https://curiousone.in/pg-contrib-card/?q=<handle>&quick=1  # quick scan (current commitfest only)
 ```
 
 ### A note on CORS
